@@ -16,7 +16,8 @@ function App() {
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+          <h1>React + Vite + TypeScript</h1>
+          <p>Это учебный проект на React, созданный для практики работы с компонентами и Git.</p>
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
