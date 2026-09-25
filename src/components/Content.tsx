@@ -11,10 +11,10 @@ export const Section = () => {
   )
 }
 
-export const MainContent = () => {
-  return (
-    <main>
-      <Section />
-    </main>
-  )
+type MainContentProps = {
+  children: React.ReactNode
+}
+
+export const MainContent: React.FC<MainContentProps> = ({ children }) => {
+  return <main className="main-content">{children}</main>
 }
