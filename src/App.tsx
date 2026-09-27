@@ -2,7 +2,9 @@ import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { MainContent, Section } from './components/Content'
-import ParentComponent from './components/ParentComponent'
+import UserProfile from './components/UserProfile'
+import TasksList from './components/TasksList'
+import Cart from './components/Cart'
 
 function App() {
   return (
@@ -10,7 +12,9 @@ function App() {
       <Header />
       <MainContent>
         <Section />
-        <ParentComponent />
+        <UserProfile />
+        <TasksList />
+        <Cart />
       </MainContent>
       <Footer />
     </>
