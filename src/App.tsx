@@ -8,6 +8,12 @@ import FormPractice from './components/FormPractice'
 import ActionButton from './components/ActionButton'
 
 function App() {
+  const saveAction = () => {
+    console.log('Сохранено')
+  }
+  const deleteAction = () => {
+    console.log('Удалено')
+  }
   return (
     <>
       <Header />
@@ -15,11 +21,8 @@ function App() {
         <ClickPractice />
         <InputPractice />
         <FormPractice />
-        <ActionButton
-          text="Сохранить"
-          callback={() => console.log('Сохранено')}
-        />
-        <ActionButton text="Удалить" callback={() => console.log('Удалено')} />
+        <ActionButton text="Сохранить" callback={saveAction} />
+        <ActionButton text="Удалить" callback={deleteAction} />
       </MainContent>
       <Footer />
     </>

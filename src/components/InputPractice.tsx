@@ -5,13 +5,25 @@ const InputPractice: React.FC = () => {
     }
   }
 
+  const handleFocus = () => {
+    console.log('Поле получило фокус')
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    console.log('onChange: ', e.target.value)
+  }
+
+  const handleBlur = () => {
+    console.log('Поле потеряло фокус')
+  }
+
   return (
     <div className="card-container">
       <h3>Input Practice</h3>
       <input
-        onChange={(e) => console.log('onChange: ', e.target.value)}
-        onFocus={() => console.log('Поле получило фокус')}
-        onBlur={() => console.log('Поле потеряло фокус')}
+        onChange={handleChange}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
         onKeyDown={handleEnter}
       />
     </div>
